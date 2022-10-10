@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Redirect";
+}
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        if (location.hash) {
+
+        }
+        else {
+            window.location.href = "https://localhost:44370/";
+            alert('User is not Logged in..');
+        }
+
+    });
+</script>
+<h2>logged in Successfully</h2>
+
