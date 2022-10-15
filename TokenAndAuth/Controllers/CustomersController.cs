@@ -76,5 +76,11 @@ namespace TokenAndAuth.Controllers
             }
             // return View(_addCustomer.CustomersList());
         }
+
+        public ActionResult DataTable()
+        {
+            List<Customers> result = _addCustomer.CustomersList();
+            return View(result);
+        }
     }
 }
